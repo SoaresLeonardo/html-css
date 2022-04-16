@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentesou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <!--O primeiro passo no caminho de adptar nosso conteúdo ao tamanho da tela vai ser aprender a gerar imagens de tamanhos diferentes e a fazer o navegador carregar a imagem certa para cada situação. para isso devemos conhecer as tags <picture>,<source>-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png">
+        <img src="imagens/g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Reproduzindo áudio em HTML5</p>
+    <audio src="midia/Lewis Capaldi - Before You Go (Official Video).mp3" controls autoplay></audio>
+    <!--MP3, WAV, OGG-->
+
+    <!--compatibilidade-->
+    <!--o preload tem 3 modos / auto pode ser um problema pois o site irá carregar só depois que o arquivo for também
+    / metadata por outro lado ira somente carregar algumas informações do arquivo / já none não irá carregar o arquivo, somente se o usuário der play nos controles!-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Lewis Capaldi - Before You Go (Official Video).mp3" type="audio/mpeg">
+        <source src="midia/Lewis Capaldi - Before You Go (Official Video).mp3" type="audio/ogg">
+        <source src="midia/Lewis Capaldi - Before You Go (Official Video).mp3" type="audio/nav">
+        <p>Infelizmente seu navegador não consegue reporduzir áudio <a href="midia/Lewis Capaldi - Before You Go (Official Video).mp3">Clique aqui para baixar o áudio em mp3</a></p>
+    </audio>
+
+</body>
+</html>

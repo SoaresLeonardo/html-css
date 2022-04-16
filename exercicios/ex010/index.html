@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>voçê pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório público no Github</a></p>
+    <!--link com o recurso target / rel-->
+    <p>voçê também pode acessar meu <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_self" rel="next">canal gratuito no youtube</a></p>
+    <!--link sem o recurso target / rel-->
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site, Se voçê quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a></p>
+    <!--colocar o rel / next na primeira página do site / colocar o rel prev na segunda página do site, ajuda no mecanismo de busca no google -->
+    <!--target / self = na mesma página-->
+    <p>voçê também pode acessar a nossa<a href="noticias/pag003.html" rel="next" target="_self"> página de noticias</a></p>
+    <!--sempre que o arquivo está dentro de uma pasta é importante guiar usando CTRL espaço  para poder acessar o arquivo que está dentro da página-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/09 - Listas HTML.pdf" download="Listas HTML.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/09 - Listas HTML.zip" download="Listas HTML.zip" type="application/zip">Link compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
